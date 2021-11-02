@@ -190,7 +190,8 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
     padding: 6px 20px;
-    color: #0a0c58;
+    color: #043d07;
+    font-weight: 600;
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
@@ -203,8 +204,8 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
-    color: #fff;
-    background: #fac822;
+    color: #ffca46;
+    background: #043d07;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -324,7 +325,7 @@ a:focus {
 }
 
 .slider_section .detail-box {
-    color: #616161;
+    color: #fff;
     font-size: 18px;
 }
 
@@ -332,24 +333,25 @@ a:focus {
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #ffffff;
-    -webkit-text-stroke: 1px #fac822;
+    color: #ffdc3d;
+    /* -webkit-text-stroke: 2px #043d07; */
 }
 
 .slider_section .detail-box a {
     display: inline-block;
     padding: 10px 45px;
-    background-color: #fac822;
+    background-color: #043d07;
     color: #ffffff;
     border-radius: 0;
     -webkit-transition: all .3s;
     transition: all .3s;
-    border: 1px solid #fac822;
+    border: 1px solid #043d07;
 }
 
 .slider_section .detail-box a:hover {
     background-color: transparent;
-    color: #fac822;
+    border: 1px solid #043d07;
+    color: #043d07;
 }
 
 .slider_section .img-box img {
@@ -378,7 +380,7 @@ a:focus {
 }
 
 .slider_section .carousel_btn-box a:hover {
-    background-color: #fac822;
+    background-color: #043d07;
     color: #ffffff;
 }
 
@@ -387,6 +389,8 @@ a:focus {
 }
 
 .product_section .box {
+    /* width: 280px;
+    height: 280px; */
     margin: 10px;
     text-align: center;
     -webkit-transition: all .3s;
@@ -427,19 +431,19 @@ a:focus {
 }
 
 
-/* .product_section .box .img-box::before {
-    content: "";
+/* .product_section .box .img-box:nth-child(2)::before {
+    content: "Kulfi";
     position: absolute;
     left: 50%;
-    bottom: 0;
-    width: 250px;
-    height: 250px;
+    bottom: 21%;
+    width: 280px;
+    height: 280px;
     border-radius: 100%;
     background-color: #ff9e6a;
     border: 15px solid #ffccb1;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 10;
 } */
 
 .product_section .box .detail-box {
@@ -467,18 +471,18 @@ a:focus {
 .product_section .btn-box span {
     display: inline-block;
     padding: 10px 45px;
-    background-color: #fac822;
+    background-color: #043d07;
     color: #ffffff;
     border-radius: 0;
     -webkit-transition: all .3s;
     transition: all .3s;
-    border: 1px solid #fac822;
+    border: 1px solid #043d07;
     cursor: pointer;
 }
 
 .product_section .btn-box span:hover {
     background-color: transparent;
-    color: #fac822;
+    color: #043d07;
 }
 
 .product_section .owl-stage {
@@ -521,8 +525,11 @@ a:focus {
 }
 
 .product_section .owl-dots .owl-dot.active {
-    background: #fac822;
+    background: #043d07;
 }
+
+.product_section .pr
+/* product section end */
 
 .about_section .row {
     -webkit-box-align: center;
@@ -582,8 +589,8 @@ a:focus {
 
 .contact_section {
     position: relative;
-    background: -webkit-gradient(linear, left top, right top, color-stop(100%, #ffd857), color-stop(50%, transparent));
-    background: linear-gradient(to right, #ffd857 100%, transparent 50%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(100%, #05610a), color-stop(50%, transparent));
+    background: linear-gradient(to right, #05610a 100%, transparent 50%);
     color: #ffffff;
     text-align: center;
 }
@@ -630,10 +637,6 @@ a:focus {
     border: 2px solid orangered;
     color: orangered;
     background: transparent;
-    padding: 10px 25px;
-    margin-right: 50px;
-    text-decoration: none;
-    font-size: 23px;
 }
 
 .desc {
@@ -770,6 +773,7 @@ a:focus {
     object-fit: cover;
     -o-object-position: center bottom;
     object-position: center bottom;
+    z-index: 100;
 }
 
 
@@ -908,7 +912,7 @@ a:focus {
 
 .menu-section {
     position: absolute;
-    top: 650px;
+    top: 700px;
     width: 0%;
     height: 0vh;
     display: none;
@@ -918,7 +922,7 @@ a:focus {
 
 .activemenu {
     position: absolute;
-    top: 650px;
+    top: 720px;
     width: 100%;
     height: 100vh;
     display: block;
