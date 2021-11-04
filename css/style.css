@@ -5,6 +5,78 @@ body {
     overflow-x: hidden;
 }
 
+
+/* Pre - loader css start*/
+
+.pre-loader {
+    background: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.centered {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    z-index: 100;
+    /* filter: blur(10px) contrast(20); */
+}
+
+.blob-1,
+.blob-2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blob-1 {
+    left: 20%;
+    animation: osc-l 2.5s ease infinite;
+    background: #fac822;
+}
+
+.blob-2 {
+    left: 80%;
+    animation: osc-r 2.5s ease infinite;
+    background: #043d07;
+}
+
+@keyframes osc-l {
+    0% {
+        left: 20%;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 20%;
+    }
+}
+
+@keyframes osc-r {
+    0% {
+        left: 80%;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 80%;
+    }
+}
+
+
+/* Pre - loader css end*/
+
 .layout_padding {
     padding: 90px 0;
 }
