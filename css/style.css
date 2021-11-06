@@ -1072,5 +1072,16 @@ a:focus {
     margin: 0 10px;
 }
 
+#developer a {
+    position: absolute;
+    right: 20px;
+    bottom: -80px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.5s;
+}
 
-/*# sourceMappingURL=style.css.map */
+#developer a:hover {
+    color: #fac822;
+}
