@@ -1071,17 +1071,3 @@ a:focus {
 .menu-section .menu-container .menu .lists #price #candy {
     margin: 0 10px;
 }
-
-#developer a {
-    position: absolute;
-    right: 20px;
-    bottom: -80px;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    transition: 0.5s;
-}
-
-#developer a:hover {
-    color: #fac822;
-}
